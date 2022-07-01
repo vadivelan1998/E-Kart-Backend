@@ -36,7 +36,7 @@ app.use("/coupon", couponController);
 app.use("/address", addressController);
 
 app.use("/orders", orderController);
-app.get("/",()=>{
+app.get("/",(req,res)=>{
     return res.status(200).send("Hi welcome to E-Kart")
 })
 
